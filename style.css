@@ -1,0 +1,155 @@
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .fs-4{
+        color:#3da8af;
+        text-align: left;
+      }
+      .fs-4:hover{
+        color:#3da8af;
+        transform: scale(1.5);
+      }
+
+      .nav-link {
+          color: rgb(0, 0, 0);
+      }
+
+      .nav-link:hover{
+        color: #3da8af;
+        transform: scale(1.5);
+    }
+
+    .btn {
+        color: #3da8af;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn:link, .btn1:link { 
+        text-decoration: none;
+        color: #3da8af;
+
+      }
+      .btn:visited { 
+        text-decoration: none;
+        color: #3da8af;
+
+      }
+      
+      .btn:active { 
+        text-decoration: none; 
+      }
+      .btn:hover {
+        color: #3da8af;
+        text-decoration: none;
+        transform: scale(1.5);
+      }
+
+      .btn1 {
+        color: #09ffeb;
+
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn1:link { 
+        text-decoration: none;
+        color: #09ffeb;
+
+
+      }
+      .btn1:visited { 
+        text-decoration: none;
+        color: #09ffeb;
+
+
+      }
+      
+      .btn1:active { 
+        text-decoration: none; 
+      }
+      .btn1:hover {
+        color: #09ffeb;
+
+        text-decoration: none;
+        transform: scale(1.5);
+      }
+
+      .d-md-flex{
+          margin-left: 20%;
+      }
+
+      h1{
+          text-align: center;
+          font-weight: 200;
+          font-style: oblique;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        border-style: ridge;
+        border-color: #3da8af;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:#ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+        color: #3da8af;
+
+      }
+      h3{
+        text-align: center;
+      }
+
+      .lead1{
+        text-align: center;
+      }
+
+      .col-md-5{
+        background-color: #3da8af;
+      }
+
+
+
+.home-section{
+  background-image: url('header.jpg');
+  width: 100%;
+  height: 600px;
+
+}
+
+.display-6{
+  padding-top: 10%;
+  color: #09ffeb;
+}
+
+.lead{
+  color: #09ffeb;
+
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <head>
+   
+<link rel="icon" type="image/png" sizes="512x512 " href="apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Rent Wear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    
+
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">Rent Wear</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="Shop.html" class="nav-link">Shop</a></li>
+          <li class="nav-item"><a href="Help.html" class="nav-link">Help</a></li>
+          <li class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg></li>
+       
+  
+        </ul>
+      </header>
+    </div>
+  </main>
+  <br><br>
+  <h3>General Questions </h3>
+  
+  <br><br>
+  <div class="container1">
+  <div id="QA">
+    <ul>
+      <p class="lead1">-When Do I need to return my item?</p>
+      <p class="lead1">We offer 4 or 8-day reservations. We recommend you book your order to arrive 1-2 days prior to your event to ensure you have plenty of time to get the perfect look..</p>
+      <p class="lead1">-When will my order arrive?</p>
+      <p class="lead1">Your delivery date will be confirmed before checkout. Check your email for confirmation your order has shipped and to locate your tracking information.
+        4 or 8-day Reserve rentals can also be delivered on Saturdays.</p>
+    </ul>
+    <ul>
+      <p class="lead1">-How do you clean your clothes?</p>
+      <p class="lead1">All of our rentals receive a thorough clean—every time. Without the use of harmful and toxic detergents.</p>
+      <p class="lead1">-What if the item I ordered doesnt fit?</p> 
+      <p class="lead1">We will do our best to provide a replacement if one or all of your items do not fit.</p>
+  
+      
+    </ul>
+  
+  </div>
+  </div>
+  <script type="text/javascript">
+      function toggle(tag) {
+          var x=document.getElementsByName(tag)[0];
+          var a = x.parentNode
+          if (a.style.display=='block'){
+              a.style.display='none'
+          }else{
+              a.style.display='block'     
+          }
+      }
+  
+  
+      function init() {
+        
+          var obj = document.getElementById('QA');
+          var elements = obj.getElementsByTagName('p');
+                 var index = 1 
+          //add javascript to question elements
+                //you could also add styling to question elements here
+          for (var i=0; i < elements.length; i+=2){
+              var element = elements[i]; 
+              element.innerHTML = "<a href='javascript:toggle(" + index + ")'>" + element.innerHTML + "</a>"
+              index = index + 1
+          } 
+          //add bookmark to answer elements and add styling
+          var index = 1
+          for (var i=1; i < elements.length; i+=2){
+              var element = elements[i]; 
+              element.innerHTML = "<a name='" + index + "' id='" + index + "'></a>" + element.innerHTML 
+              index = index + 1
+                   element.style.padding = '0px 0px 10px 20px' //add indent to answer
+                         element.style.listStyleType = 'none' //remove bullet
+              element.style.display = 'none' //hide answer element
+          }       
+       }
+  
+  
+  window.onload = init; 
+  </script> 
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted">&copy; 2022 Rent Wear, Inc</span>
+          </div>
+        
+          </ul>
+        </footer>
+      </div>
+      </html>
